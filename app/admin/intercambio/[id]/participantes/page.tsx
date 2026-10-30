@@ -114,8 +114,7 @@ export default async function ParticipantesPage({ params }: PageProps) {
               </h1>
 
               <p className="mt-2 max-w-2xl text-sm leading-6 text-[#76685f]">
-                Agrega a las personas que participarán y define cuántos
-                regalos dará cada una.
+                Agrega a las personas que participarán en este intercambio.
               </p>
             </div>
 
@@ -241,17 +240,7 @@ export default async function ParticipantesPage({ params }: PageProps) {
                               </div>
                             </div>
 
-                            <div className="flex items-center justify-between gap-4 sm:justify-end">
-                              <div className="text-right">
-                                <p className="text-xs text-[#94857b]">
-                                  Regalos
-                                </p>
-
-                                <p className="font-bold text-[#a9684c]">
-                                  {participante.cantidad_regalos}
-                                </p>
-                              </div>
-
+                           <div className="flex items-center justify-end">
                               <Link
                                 href={`/admin/intercambio/${id}/participantes/${participante.id}`}
                                 className="rounded-xl border border-[#dfcfc2] px-4 py-2 text-sm font-semibold text-[#5c4b40] transition hover:bg-[#faf5f0]"
